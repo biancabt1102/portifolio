@@ -1,53 +1,46 @@
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import IconeHome from "/imagens/icone-home.png";
 import { useState } from "react";
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState<string>("");
-
-  function handleLinkClick(link: string) {
-    setActiveLink(link);
-  }
+  const location = useLocation();
+  const [activeLink] = useState(location.pathname);
 
   return (
     <div className="bg-banner w-screen h-28 flex justify-between items-center">
-      <Link
+      <NavLink
         to="/"
         className={`w-28 text-center hover:cursor-pointer ${
           activeLink === "/" ? "underline" : ""
         }`}
-        onClick={() => handleLinkClick("/")}
       >
         <img src={IconeHome} alt="Icone do home" className="w-20 h-20 ml-14" />
-      </Link>
+      </NavLink>
       <nav className="h-10 flex justify-between items-center mr-14">
-        <Link
+        <NavLink
           to="/sobremim"
           className={`w-28 text-center text-lg hover:cursor-pointer ${
             activeLink === "/sobremim" ? "underline" : ""
           }`}
-          onClick={() => handleLinkClick("/sobremim")}
         >
           Sobre mim
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/projetos"
           className={`w-28 text-center text-lg hover:cursor-pointer ${
             activeLink === "/projetos" ? "underline" : ""
           }`}
-          onClick={() => handleLinkClick("/projetos")}
         >
           Projetos
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/contato"
           className={`w-28 text-center text-lg hover:cursor-pointer ${
             activeLink === "/contato" ? "underline" : ""
           }`}
-          onClick={() => handleLinkClick("/contato")}
         >
           Contato
-        </Link>
+        </NavLink>
       </nav>
     </div>
   );
