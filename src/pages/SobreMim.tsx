@@ -1,6 +1,12 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function SobreMim() {
   return (
-    <div>SobreMim</div>
+    <div>
+      <Header />
+
+      <Footer />
+    </div>
   )
 }

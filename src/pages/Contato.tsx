@@ -1,6 +1,11 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function Contato() {
   return (
-    <div>Contato</div>
+    <div>
+      <Header />
+      <Footer />
+    </div>
   )
 }

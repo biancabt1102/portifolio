@@ -11,9 +11,7 @@ export default function Home() {
       <main className="w-screen flex justify-center my-16">
         <Banner />
       </main>
-      <footer className="bg-bg-dark-blue h-[124px]">
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   )
 }
