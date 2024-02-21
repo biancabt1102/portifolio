@@ -9,7 +9,7 @@ export default {
       colors:{
         'bg-blue': '#0048A7',
         'bg-dark-blue': '#001029',
-        'bg-banner': '#E1EAF4',
+        'banner': '#E1EAF4',
         'bg-banner-img': '#BBE6E4',
         'bg-form': 'rgba(66,191,221,0.75)',
         'text-brown': '#3C3C3C',
