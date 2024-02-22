@@ -3,15 +3,11 @@ import PhotoAboutMe from '/imagens/foto-sobre-mim.png';
 export default function AboutMe() {
   return (
     <main className="text-white flex flex-wrap">
-      <h1 className="w-screen text-center text-2xl mt-4 mb-6">
+      <h1 className="w-screen text-center text-2xl my-8">
         Olá sou a Bianca!
       </h1>
-      <article className="flex justify-center items-center text-justify mb-4">
-        <div className="w-1/2 mr-16 text-lg">
-          <p className='pb-0.5'>
-            Oi, tudo bem? Eu sou desenvolvedora e estou feliz de te ver por
-            aqui.
-          </p>
+      <article className="flex justify-center items-center text-justify mb-8">
+        <div className="w-1/2 mr-12 text-lg indent-8">
           <p className='pb-0.5'>
             Minha história com programação começou quando meu primo me contou
             sempre da área de Sistemas de Informação e como cada pequeno detalhe
