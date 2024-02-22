@@ -7,7 +7,7 @@ export default function Header() {
   const [activeLink] = useState(location.pathname);
 
   return (
-    <div className="bg-banner w-screen h-28 flex justify-between items-center">
+    <header className="bg-banner w-screen h-28 flex justify-between items-center">
       <NavLink
         to="/"
         className={`w-28 text-center hover:cursor-pointer ${
@@ -42,6 +42,6 @@ export default function Header() {
           Contato
         </NavLink>
       </nav>
-    </div>
+    </header>
   );
 }
